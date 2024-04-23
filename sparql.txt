@@ -1,0 +1,16 @@
+PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
+SELECT ?name
+WHERE {
+    {
+SELECT ?name
+WHERE {
+?x foaf:temCargo  'FG'  .
+?x foaf:name ?name   .
+      }
+    }    {
+SELECT ?name
+WHERE {
+?x foaf:temCargo  'CC'  .
+?x foaf:name ?name   .
+      }
+    }}
